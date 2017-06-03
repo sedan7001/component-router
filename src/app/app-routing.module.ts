@@ -5,8 +5,17 @@ import {SecondComponent}   from './second/second.component';
 import {ThirdComponent}   from './third/third.component';
 import {FourthComponent} from "./third/fourth/fourth.component";
 import {NotFoundComponent} from './not-found/not-found.component';
+import {AsyncComponent} from "./async/async.component";
+import {JsonComponent} from "./json/json.component";
+import {OnewayStatementComponent} from "./oneway-statement/oneway-statement.component";
+import {TwowayNgmodelComponent} from "./twoway-ngmodel/twoway-ngmodel.component";
 
 const testRoutes: Routes = [
+
+  {path: 'twoway', component: TwowayNgmodelComponent},
+  {path: 'oneway', component: OnewayStatementComponent},
+  {path: 'async', component: AsyncComponent},
+  {path: 'json', component: JsonComponent},
   {path: 'first', component: FirstComponent},
   {path: 'second', component: SecondComponent}
 ];

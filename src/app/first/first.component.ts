@@ -1,11 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 
-
 @Component({
   selector: 'app-first',
-  templateUrl: './first.component.html',
-  styleUrls: ['./first.component.css']
+  templateUrl: './first.component.html'
 })
 export class FirstComponent implements OnInit {
 
@@ -14,7 +12,6 @@ export class FirstComponent implements OnInit {
   }
 
   ngOnInit() {
-
   }
 
   click = {
@@ -22,8 +19,5 @@ export class FirstComponent implements OnInit {
       this.router.navigateByUrl("third/fourth");
     }
   }
-
-
-
 
 }
